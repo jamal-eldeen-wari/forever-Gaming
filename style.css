@@ -50,11 +50,19 @@ color:#E4FBFF;
  
 }
 #console div h5 a{
+<<<<<<< HEAD
   
   color: white;
 }
 #games div h5 a{
   
+=======
+  text-decoration: none;
+  color: white;
+}
+#games div h5 a{
+text-decoration: none;
+>>>>>>> 55bb2271cd4a2b41db4445e42dc3be08907ad1a0
   color: white;
 }
 *{
