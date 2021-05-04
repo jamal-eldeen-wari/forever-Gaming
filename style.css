@@ -1,0 +1,77 @@
+body{
+  margin: 0px;
+  background-color:white;
+}
+header{
+  background-color: #B8B5FF ;
+  height: 80px;
+}
+header nav{
+  float: right;
+  width: 30%;
+  margin-top: 15px;
+}
+header h1{
+  float: left;
+  margin-left: 40px;
+}
+header nav ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+header nav ul li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+#console{
+   background-color: #7868E6;
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+#console h3{
+font-size: 45px;
+padding-top:20px;
+color:#E4FBFF;
+}
+#games{
+  
+   background-color: #7868E6;
+   text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+#games h3{
+font-size: 45px;
+padding-top:20px;
+color:#E4FBFF;
+}
+.image-container{
+  text-align: center;
+  display: inline-block;
+ 
+}
+#console div h5 a{
+  text-decoration: none;
+  color: white;
+}
+#games div h5 a{
+text-decoration: none;
+  color: white;
+}
+*{
+  box-sizing: border-box;
+}
+.clm{
+  float: left;
+  width: 33.33%;
+  padding: 3px;
+}
+.clm img{
+  height: 300px;
+}
+
+footer{
+  text-align: center;
+  background-color:  #B8B5FF;
+  margin: 30px 0px 0px 0px; 
+  
+}
