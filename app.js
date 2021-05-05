@@ -1,3 +1,7 @@
+// TO CHECK IF MY CODE RUNS OR NOT;
+// For Testing purposes(rdr2, CODBO, CODMW, LoUR, Uncharted, FIFA21);
+// Once you open the website make sure to refresh it again;
+alert ("Make sure to refresh the page");
 document.write('<h3 id = "middle">'+ "We want to know what is your favorite game of all time, we are making a poll please answer the question :) "+'</h3>');
 
 var favGame = prompt("What is your favorite game ?");
