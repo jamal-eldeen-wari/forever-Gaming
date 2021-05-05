@@ -57,11 +57,11 @@ color:#E4FBFF;
 #games div h5 a{
   
 
-  text-decoration: none;
+  
   color: white;
 }
 #games div h5 a{
-text-decoration: none;
+
 
   color: white;
 }
@@ -75,6 +75,12 @@ text-decoration: none;
 }
 .clm img{
   height: 300px;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
 }
 
 footer{
