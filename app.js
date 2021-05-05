@@ -2,6 +2,10 @@
 // For Testing purposes(rdr2, CODBO, CODMW, LoUR, Uncharted, FIFA21);
 // Once you open the website make sure to refresh it again;
 
+alert ("Welcome to My Website");
+document.write('<h3 id = "middle">'+ "We want to know what is your favorite game of all time, we are making a poll please answer the question :) "+'</h3>');
+
+
 // HERE IS THE ALERT MESSAGE;
 alert ("Welcome to My Website");
 // HERE IS THE CONSOLE.LOG SYNTAX;
