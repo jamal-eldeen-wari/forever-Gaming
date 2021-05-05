@@ -1,10 +1,16 @@
 // TO CHECK IF MY CODE RUNS OR NOT;
 // For Testing purposes(rdr2, CODBO, CODMW, LoUR, Uncharted, FIFA21);
 // Once you open the website make sure to refresh it again;
-alert ("Make sure to refresh the page");
-document.write('<h3 id = "middle">'+ "We want to know what is your favorite game of all time, we are making a poll please answer the question :) "+'</h3>');
 
+// HERE IS THE ALERT MESSAGE;
+alert ("Welcome to My Website");
+// HERE IS THE CONSOLE.LOG SYNTAX;
+console.log("Welcome to My Website");
+
+document.write('<h3 id = "middle">'+ "We want to know what is your favorite game of all time, we are making a poll please answer the question :) "+'</h3>');
+// HERE IS THE PROMPT;
 var favGame = prompt("What is your favorite game ?");
+// HERE IS THE CONDITION;
 if (favGame == "rdr2" || favGame=="Red Dead Redemption 2"){
   document.write('<h3 id = "middle">'+ "Your favorite game is "+ '</h3>');
   document.write('<img src = "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" width = "200px" class = "center" >');
@@ -26,7 +32,8 @@ else if (favGame == "FIFA21"|| favGame == "fifa21" || favGame == "EA SPORTS FIFA
 }else if (favGame == "Uncharted 4 "|| favGame == "U4" || favGame == "Uncharted"){
   document.write('<h3 id = "middle">'+ "Your favorite game is "+ '</h3>');
   document.write('<img src = "https://upload.wikimedia.org/wikipedia/en/1/1a/Uncharted_4_box_artwork.jpg"width = "200px" class = "center">');
-}
+} 
+// IN CASE THE USER ENTERS NOTHING THIS MESSAGE SHOWS UP
 else{
   document.write("Please enter a correct game name :)");
 }
