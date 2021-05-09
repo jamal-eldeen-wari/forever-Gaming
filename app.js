@@ -42,16 +42,21 @@ document.write('<h3 id = "middle">'+ "We want to know what is your favorite game
 
 // Asking for favorite game;
 var favGame = prompt("What is your favorite game (rdr2, fifa21, CODMW, CODBO, LoUR, Uncharted) ?");
+
+
 //  It will stop looping when the user gives the correct answer;
 while (favGame!="rdr2" && favGame!="fifa21" && favGame != "CODMW" && favGame != "CODBO" && favGame !="LoUR" && favGame!="Uncharted"){
   alert("Please write one of the games that are shown in the question.");
   var favGame = prompt("What is your favorite game (rdr2, fifa21, CODMW, CODBO, LoUR, Uncharted) ?");
 }
-
+// this function is for dispalying the game;
+function favgames(){
+  // initialize value for result is an empty string;
+ 
 if (favGame == "rdr2"){
   document.write('<h3 id = "middle">'+ "Your favorite game is "+ '</h3>');
-  document.write('<img src = "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" width = "200px" class = "center" >');
-}else if(favGame == "fifa21"){
+  document.write('<img src = "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" width = "200px" class = "center" >'); 
+  }else if(favGame == "fifa21"){
 document.write('<h3 id = "middle">'+ "Your favorite game is "+ '</h3>');
   document.write('<img src = "https://images-na.ssl-images-amazon.com/images/I/81mBk8%2BsxrL._AC_SX385_.jpg"width = "200px" class = "center">');
 }else if(favGame == "CODMW"){
@@ -66,9 +71,13 @@ document.write('<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/4/40
 }else if(favGame == "Uncharted" ){
   document.write('<h3 id = "middle">'+ "Your favorite game is "+ '</h3>');
   document.write('<img src = "https://upload.wikimedia.org/wikipedia/en/1/1a/Uncharted_4_box_artwork.jpg"width = "200px" class = "center">');
+
 }
-// Code for raiting 
-var rate = prompt("How many stars (1-5) do you rate "+ favGame +" ?");
+}
+// Code for raiting
+function rateFunc(){
+ 
+  var rate = prompt("How many stars (1-5) do you rate "+ favGame +" ?");
 
 document.write('<h3 id = "middle">'+ "Your Raiting for  "+favGame+"  is"+ '</h3>');
 
@@ -76,6 +85,7 @@ document.write('<h3 id = "middle">'+ "Your Raiting for  "+favGame+"  is"+ '</h3>
 // document.write('<img id = "stars" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLuPyLWYn_sS2AeIta3BRFYDCKOdcCRbD2Vg&usqp=CAU" width = "50px" class = "center">');
 // }
 if(rate == 1){
+  // result = '<img id = "stars" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Star_rating_1_of_5.png/180px-Star_rating_1_of_5.png" width = "150px" class = "center">';
 document.write('<img id = "stars" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Star_rating_1_of_5.png/180px-Star_rating_1_of_5.png" width = "150px" class = "center">');
 }
 if(rate == 2){
@@ -92,37 +102,42 @@ if(rate == 5){
 document.write('<img id = "stars" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Star_rating_5_of_5.png/180px-Star_rating_5_of_5.png" width = "150px" class = "center">');
 }
 if(favGame == "rdr2"){
-  for (var i = 0; i<rate; i++){
+  for (var i = 0 ; i<rate ; i++){
 document.write('<img src = "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" width = "200px" class = "center" >');
 }
 }
 if(favGame == "fifa21"){
-  for (var i = 0; i<rate; i++){
+  for (var i = 0 ; i<rate ; i++){
 document.write('<img src = "https://images-na.ssl-images-amazon.com/images/I/81mBk8%2BsxrL._AC_SX385_.jpg"width = "200px" class = "center">');
 }
 }
 if(favGame == "CODMW"){
-  for (var i = 0; i<rate; i++){
+  for (var i = 0 ; i<rate ; i++){
 document.write('<img src = "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/kronos/common/social-share/social-share-image.jpg" width = "200px" class = "center">');
   }
 }
 
 if(favGame == "CODBO"){
-  for (var i = 0; i<rate; i++){
+  for (var i = 0; i<rate ; i++){
 document.write('<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Black_Ops_Cold_War.jpeg/220px-Black_Ops_Cold_War.jpeg" width = "200px" class = "center">');
   }
 }
 
 if(favGame == "LoUR"){
-  for (var i = 0; i<rate; i++){
+  for (var i = 0; i<rate ; i++){
 document.write('<img src = "https://image.api.playstation.com/vulcan/img/rnd/202010/2716/Uf86AuvSNRplUW1tpSsYJqQX.png"width = "200px" class = "center">');
   }
 }
 
 if(favGame == "Uncharted"){
-  for (var i = 0; i<rate; i++){
+  for (var i = 0; i<rate ; i++){
 document.write('<img src = "https://upload.wikimedia.org/wikipedia/en/1/1a/Uncharted_4_box_artwork.jpg"width = "200px" class = "center">');
   }
 }
+
+} 
+favgames();
+rateFunc();
+
 
 
